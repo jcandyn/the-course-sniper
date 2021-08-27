@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Middlesex Course Sniper</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -63,9 +63,9 @@ export default function Home() {
           </a> */}
 
             <p className="description">
-          Check the middlesex county college course catalog for classes you are interested in but are currently full. 
-          Then, click to subscribe to notifications
-          if there are any open seats available. You will be notified if that is the case.
+          Check the catalog for classes you are interested in but are currently full. 
+          Click to subscribe to notifications
+          if there are any open seats available. You will be notified if that happens.
           {/* <code>pages/index.js</code> */}
         </p>
         </div>
