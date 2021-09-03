@@ -1,9 +1,31 @@
 import Head from 'next/head'
 import Link from 'next/link'
+// import React from 'react'
 
 export default function Home() {
+  // const [inputValue, setInputValue] = React.useState('')
+  // const [userFollowers, setUserFollowers] = React.useState({})
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   fetch('/api/scrapedCourses', {
+  //     method: 'post',
+  //     headers: {
+  //       'content-type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ TWuser: inputValue }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((userData) => {
+  //       setUserFollowers(userData)
+  //     })
+  // }
+
   return (
+   
+       
     <div className="container">
+
       <Head>
         <title>Middlesex Course Sniper</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,13 +36,29 @@ export default function Home() {
           Learn :) <a href="https://nextjs.org">Next.js!</a>
         </h1> */}
 
+{/* <button onclick={handleSubmit}>
+          <label>
+            Load Catalog: 
+            <input
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+          </label>
+          <button>Submit</button>
+        </button>
+        {userFollowers.subjectName ? (
+          <p>Followers: {userFollowers.subjectName}</p>
+        ) : (
+          <p>{userFollowers.error}</p>
+        )} */}
+    
 <h1 className="title">
   Middlesex Course Sniper
 </h1>
 
         <h1 className="title">
  Access{' '}
-  <Link href="/classes/courseCatalog">
+  <Link href="/api/scrapedCourses">
     <a>Course Catalog!</a>
   </Link>
 </h1>
@@ -232,4 +270,12 @@ export default function Home() {
       `}</style>
     </div>
   )
+
+
 }
+
+
+
+
+
+
