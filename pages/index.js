@@ -3,23 +3,22 @@ import Link from 'next/link'
 // import React from 'react'
 
 export default function Home() {
-  // const [inputValue, setInputValue] = React.useState('')
-  // const [userFollowers, setUserFollowers] = React.useState({})
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   fetch('/api/scrapedCourses', {
-  //     method: 'post',
-  //     headers: {
-  //       'content-type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ TWuser: inputValue }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((userData) => {
-  //       setUserFollowers(userData)
-  //     })
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    fetch('/api/scrapedCourses', {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify({ TWuser: "random" }),
+    })
+      .then((res) => res.json())
+      .then((userData) => {
+        // setUserFollowers(userData)
+        console.log(userData)
+        console.log("click worked")
+      })
+  }
 
   return (
    
@@ -58,9 +57,10 @@ export default function Home() {
 
         <h1 className="title">
  Access{' '}
-  <Link href="/api/scrapedCourses">
+  {/* <Link href="/api/scrapedCourses">
     <a>Course Catalog!</a>
-  </Link>
+  </Link> */}
+   <button onClick={handleSubmit}>Catalog</button>
 </h1>
 
 
