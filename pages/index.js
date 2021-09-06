@@ -57,10 +57,10 @@ export default function Home() {
 
         <h1 className="title">
  Access{' '}
-  {/* <Link href="/api/scrapedCourses">
-    <a>Course Catalog!</a>
-  </Link> */}
-   <button onClick={handleSubmit}>Catalog</button>
+  <Link href="/scraped">
+  <a onClick={handleSubmit}>Catalog</a>
+  </Link>
+   
 </h1>
 
 
@@ -110,14 +110,6 @@ export default function Home() {
       </main>
 
       <footer>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a> */}
         This website is not created by or sponsored by Middlesex County College. It is made by a fellow student 
         for the use of other students. Good luck!
       </footer>
